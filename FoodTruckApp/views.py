@@ -21,3 +21,8 @@ def register(request):
         'form':form
     }
     return render(request, 'registration/register.html', context)
+
+
+def index(request):
+    context = {}
+    return render(request,'FoodTruckApp/base.html', context)
