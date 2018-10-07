@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.contrib.auth.forms import UserCreationForm, UserChangeForm
-
+from django.contrib.auth import login, authenticate
+from django.shortcuts import render, redirect
 
 # Create your views here.
 def register(request):
@@ -11,10 +12,10 @@ def register(request):
             username = form.cleaned_data['username']
             password = form.cleaned_data['password1']
             user = authenticate(username = username, password = password)
-            initial_group = Group.objects.get(name = 'lvl2')
+            initial_group = Group.objects.get(name = 'lvl23')
             initial_group.user_set.add(user)
             login(request, user)
-            return redirect('/WorkPlan/dashboard.html')
+            return redirect('/FoodTruckApp/base.html')
     else:
         form = UserCreationForm()
     context =  {
@@ -39,7 +40,6 @@ def view_announcements(request):
 def index(request):
     context = {}
     return render(request,'FoodTruckApp/base.html', context)
-
 
 def menu(request):
     context = {}

@@ -71,6 +71,8 @@
 </head>
 
 <body>
+
+{% block content %}
     <form method="POST" action="{% url 'FoodTruckApp:register' %}">
         {%csrf_token%}
        
@@ -88,6 +90,7 @@
 
 
     </form>
+	{% endblock %}
 </body>
 
 </html>
