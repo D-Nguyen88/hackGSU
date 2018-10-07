@@ -41,7 +41,6 @@ class Truck(models.Model):
     rating = models.FloatField(default=0.0)
         #Rating for new Truck is set to 0.0
 
-    
 class OperationHours(models.Model):
     truck = models.ForeignKey(Truck)
     weekday = models.IntegerField(choices=weekdays, unique=True)

@@ -21,3 +21,17 @@ def register(request):
         'form':form
     }
     return render(request, 'registration/register.html', context)
+
+def view_user_profile(request):
+    get_user_obj = UserProfile.objects.get(username=request.user)
+    return render(request, url, context)
+
+def view_truck_profile(request):
+    get_user_obj = Truck.objects.get(username=request.user)
+    return render(request, url, context)
+
+def view_announcements(request):
+    get_announcements_obj = Announcements.objects.filter(pk=Truck)
+    return render(request, url, context)
+
+    
