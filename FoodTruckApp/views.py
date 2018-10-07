@@ -35,11 +35,9 @@ def view_announcements(request):
     get_announcements_obj = Announcements.objects.filter(pk=Truck)
     return render(request, url, context)
 
-
 def index(request):
     context = {}
     return render(request,'FoodTruckApp/base.html', context)
-
 
 def menu(request):
     context = {}
