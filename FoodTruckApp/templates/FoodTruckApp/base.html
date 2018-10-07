@@ -7,9 +7,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Food Truck App</title>
+    <title>Street Eats App</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/png" href="{% static 'FoodTruckApp/assets/images/icon/favicon.ico' %}">
+    <link rel="shortcut icon" type="image/png" href="{% static 'FoodTruckApp/assets/images/icon/logo.png' %}">
     <link rel="stylesheet" href="{% static 'FoodTruckApp/assets/css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'FoodTruckApp/assets/css/font-awesome.min.css' %}">
     <link rel="stylesheet" href="{% static 'FoodTruckApp/assets/css/themify-icons.css' %}">
@@ -47,7 +48,7 @@
                         <ul class="metismenu" id="menu">
 
                           <li>
-                            <a href="javascript:void(0)" aria-expanded="true"><i class="fa fa-user"></i> <span>Profile</span></a>
+                            <a href="{%static 'FoodTruckApp/templates/FoodTruckApp/userProfile.html'%}" aria-expanded="true"><i class="fa fa-user"></i> <span>Profile</span></a>
                           </li>
 
                           <li>
@@ -139,9 +140,11 @@
                                               <div class="member-box">
                                                   <div class="s-member">
                                                       <div class="media align-items-center">
-                                                          <img src="{% static 'FoodTruckApp/assets/images/team/team-author1.jpg' %}" class="d-block ui-w-30 rounded-circle" alt="">
+                                                        <a href="{% static 'FoodTruckApp/templates/FoodTruckApp/menu.html' %}">
+                                                          <img src="{% static 'FoodTruckApp/assets/images/truck_profile/images/duck_n_roll.jpg' %}" class="d-block ui-w-30 rounded-circle" alt="">
+                                                        </a>
                                                           <div class="media-body ml-5">
-                                                              <p>Bun Intended Food Truck</p><span>Irving T. Frye</span>
+                                                              <p>duck_n_roll</p><span>Irving T. Frye</span>
                                                           </div>
                                                           <div class="tm-social">
                                                               <a href="#"><i class="fa fa-phone"></i></a>
@@ -151,9 +154,9 @@
                                                   </div>
                                                   <div class="s-member">
                                                       <div class="media align-items-center">
-                                                          <img src="{% static 'FoodTruckApp/assets/images/team/team-author2.jpg' %}" class="d-block ui-w-30 rounded-circle" alt="">
+                                                          <img src="{% static 'FoodTruckApp/assets/images/truck_profile/images/grandma_station.png' %}" class="d-block ui-w-30 rounded-circle" alt="">
                                                           <div class="media-body ml-5">
-                                                              <p>Chef in  a Box</p><span>Emma E. Smith</span>
+                                                              <p>Grandma Station</p><span>Emma E. Smith</span>
                                                           </div>
                                                           <div class="tm-social">
                                                               <a href="#"><i class="fa fa-phone"></i></a>
@@ -163,9 +166,9 @@
                                                   </div>
                                                   <div class="s-member">
                                                       <div class="media align-items-center">
-                                                          <img src="{% static 'FoodTruckApp/assets/images/team/team-author3.jpg' %}" class="d-block ui-w-30 rounded-circle" alt="">
+                                                          <img src="{% static 'FoodTruckApp/assets/images/truck_profile/images/johnny_doughnuts.jpg' %}" class="d-block ui-w-30 rounded-circle" alt="">
                                                           <div class="media-body ml-5">
-                                                              <p>Ciao Wagon</p><span>Bruce J. Gilligan</span>
+                                                              <p>Johnny Doughnuts</p><span>Johnny B. Gilligan</span>
                                                           </div>
                                                           <div class="tm-social">
                                                               <a href="#"><i class="fa fa-phone"></i></a>
@@ -175,9 +178,9 @@
                                                   </div>
                                                   <div class="s-member">
                                                       <div class="media align-items-center">
-                                                          <img src="{% static 'FoodTruckApp/assets/images/team/team-author4.jpg' %}" class="d-block ui-w-30 rounded-circle" alt="">
+                                                          <img src="{% static 'FoodTruckApp/assets/images/truck_profile/images/mr_tacos.jpg' %}" class="d-block ui-w-30 rounded-circle" alt="">
                                                           <div class="media-body ml-5">
-                                                              <p>Crepe’n Around</p><span>Faruk Hasan</span>
+                                                              <p>Mr.Tacos</p><span>Faruk Hasan</span>
                                                           </div>
                                                           <div class="tm-social">
                                                               <a href="#"><i class="fa fa-phone"></i></a>
@@ -187,9 +190,9 @@
                                                   </div>
                                                   <div class="s-member">
                                                       <div class="media align-items-center">
-                                                          <img src="{% static 'FoodTruckApp/assets/images/team/team-author5.jpg' %}" class="d-block ui-w-30 rounded-circle" alt="">
+                                                          <img src="{% static 'FoodTruckApp/assets/images/truck_profile/images/sur_logo.jpg' %}" class="d-block ui-w-30 rounded-circle" alt="">
                                                           <div class="media-body ml-5">
-                                                              <p>Curbing Your Appetite</p><span>Janice F. Garcia</span>
+                                                              <p>Sur Latin Fusion Cuisine</p><span>Sur F. Garcia</span>
                                                           </div>
                                                           <div class="tm-social">
                                                               <a href="#"><i class="fa fa-phone"></i></a>
@@ -201,9 +204,9 @@
                                               <div class="member-box">
                                                   <div class="s-member">
                                                       <div class="media align-items-center">
-                                                          <img src="{% static 'FoodTruckApp/assets/images/team/team-author1.jpg' %}" class="d-block ui-w-30 rounded-circle" alt="">
+                                                          <img src="{% static 'FoodTruckApp/assets/images/truck_profile/images/Empanada_Guy.png' %}" class="d-block ui-w-30 rounded-circle" alt="">
                                                           <div class="media-body ml-5">
-                                                              <p>Bun Intended Food Truck</p><span>Irving T. Frye</span>
+                                                              <p>Empanada Guy</p><span>Irving T. Frye</span>
                                                           </div>
                                                           <div class="tm-social">
                                                               <a href="#"><i class="fa fa-phone"></i></a>
@@ -213,9 +216,9 @@
                                                   </div>
                                                   <div class="s-member">
                                                       <div class="media align-items-center">
-                                                          <img src="{% static 'FoodTruckApp/assets/images/team/team-author2.jpg' %}" class="d-block ui-w-30 rounded-circle" alt="">
+                                                          <img src="{% static 'FoodTruckApp/assets/images/truck_profile/images/Joey_B.png' %}" class="d-block ui-w-30 rounded-circle" alt="">
                                                           <div class="media-body ml-5">
-                                                              <p>Chef in  a Box</p><span>Emma E. Smith</span>
+                                                              <p>Joey B's Food Truck</p><span>Joey B. Smith</span>
                                                           </div>
                                                           <div class="tm-social">
                                                               <a href="#"><i class="fa fa-phone"></i></a>
@@ -225,9 +228,9 @@
                                                   </div>
                                                   <div class="s-member">
                                                       <div class="media align-items-center">
-                                                          <img src="{% static 'FoodTruckApp/assets/images/team/team-author3.jpg' %}" class="d-block ui-w-30 rounded-circle" alt="">
+                                                          <img src="{% static 'FoodTruckApp/assets/images/truck_profile/images/mac_daddys.png' %}" class="d-block ui-w-30 rounded-circle" alt="">
                                                           <div class="media-body ml-5">
-                                                              <p>Ciao Wagon</p><span>Bruce J. Gilligan</span>
+                                                              <p>MAC Daddy's</p><span>Bruce J. Gilligan</span>
                                                           </div>
                                                           <div class="tm-social">
                                                               <a href="#"><i class="fa fa-phone"></i></a>
@@ -237,9 +240,9 @@
                                                   </div>
                                                   <div class="s-member">
                                                       <div class="media align-items-center">
-                                                          <img src="{% static 'FoodTruckApp/assets/images/team/team-author4.jpg' %}" class="d-block ui-w-30 rounded-circle" alt="">
+                                                          <img src="{% static 'FoodTruckApp/assets/images/truck_profile/images/rocacorba.jpg' %}" class="d-block ui-w-30 rounded-circle" alt="">
                                                           <div class="media-body ml-5">
-                                                              <p>Crepe’n Around</p><span>Faruk Hasan</span>
+                                                              <p>Rocacorba Food Truck</p><span>Faruk Hasan</span>
                                                           </div>
                                                           <div class="tm-social">
                                                               <a href="#"><i class="fa fa-phone"></i></a>
@@ -249,9 +252,9 @@
                                                   </div>
                                                   <div class="s-member">
                                                       <div class="media align-items-center">
-                                                          <img src="{% static 'FoodTruckApp/assets/images/team/team-author5.jpg' %}" class="d-block ui-w-30 rounded-circle" alt="">
+                                                          <img src="{% static 'FoodTruckApp/assets/images/truck_profile/images/veg_out.png' %}" class="d-block ui-w-30 rounded-circle" alt="">
                                                           <div class="media-body ml-5">
-                                                              <p>Curbing Your Appetite</p><span>Janice F. Garcia</span>
+                                                              <p>Veg Out</p><span>Janice F. Garcia</span>
                                                           </div>
                                                           <div class="tm-social">
                                                               <a href="#"><i class="fa fa-phone"></i></a>
@@ -260,68 +263,7 @@
                                                       </div>
                                                   </div>
                                               </div>
-                                              <div class="member-box">
-                                                  <div class="s-member">
-                                                      <div class="media align-items-center">
-                                                          <img src="{% static 'FoodTruckApp/assets/images/team/team-author1.jpg' %}" class="d-block ui-w-30 rounded-circle" alt="">
-                                                          <div class="media-body ml-5">
-                                                              <p>Bun Intended Food Truck</p><span>Irving T. Frye</span>
-                                                          </div>
-                                                          <div class="tm-social">
-                                                              <a href="#"><i class="fa fa-phone"></i></a>
-                                                              <a href="#"><i class="fa fa-envelope"></i></a>
-                                                          </div>
-                                                      </div>
-                                                  </div>
-                                                  <div class="s-member">
-                                                      <div class="media align-items-center">
-                                                          <img src="{% static 'FoodTruckApp/assets/images/team/team-author2.jpg' %}" class="d-block ui-w-30 rounded-circle" alt="">
-                                                          <div class="media-body ml-5">
-                                                              <p>Chef in  a Box</p><span>Emma E. Smith</span>
-                                                          </div>
-                                                          <div class="tm-social">
-                                                              <a href="#"><i class="fa fa-phone"></i></a>
-                                                              <a href="#"><i class="fa fa-envelope"></i></a>
-                                                          </div>
-                                                      </div>
-                                                  </div>
-                                                  <div class="s-member">
-                                                      <div class="media align-items-center">
-                                                          <img src="{% static 'FoodTruckApp/assets/images/team/team-author3.jpg' %}" class="d-block ui-w-30 rounded-circle" alt="">
-                                                          <div class="media-body ml-5">
-                                                              <p>Ciao Wagon</p><span>Bruce J. Gilligan</span>
-                                                          </div>
-                                                          <div class="tm-social">
-                                                              <a href="#"><i class="fa fa-phone"></i></a>
-                                                              <a href="#"><i class="fa fa-envelope"></i></a>
-                                                          </div>
-                                                      </div>
-                                                  </div>
-                                                  <div class="s-member">
-                                                      <div class="media align-items-center">
-                                                          <img src="{% static 'FoodTruckApp/assets/images/team/team-author4.jpg' %}" class="d-block ui-w-30 rounded-circle" alt="">
-                                                          <div class="media-body ml-5">
-                                                              <p>Crepe’n Around</p><span>Faruk Hasan</span>
-                                                          </div>
-                                                          <div class="tm-social">
-                                                              <a href="#"><i class="fa fa-phone"></i></a>
-                                                              <a href="#"><i class="fa fa-envelope"></i></a>
-                                                          </div>
-                                                      </div>
-                                                  </div>
-                                                  <div class="s-member">
-                                                      <div class="media align-items-center">
-                                                          <img src="{% static 'FoodTruckApp/assets/images/team/team-author5.jpg' %}" class="d-block ui-w-30 rounded-circle" alt="">
-                                                          <div class="media-body ml-5">
-                                                              <p>Curbing Your Appetite</p><span>Janice F. Garcia</span>
-                                                          </div>
-                                                          <div class="tm-social">
-                                                              <a href="#"><i class="fa fa-phone"></i></a>
-                                                              <a href="#"><i class="fa fa-envelope"></i></a>
-                                                          </div>
-                                                      </div>
-                                                  </div>
-                                              </div>
+
 
 
 
@@ -357,8 +299,8 @@
                                         </div>
                                         <div class="lts-content">
                                             <span>Admin Post</span>
-                                            <h2><a href="blog.html">Sed ut perspiciatis unde omnis iste.</a></h2>
-                                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some...</p>
+                                            <h2><a href="blog.html">tell no one</a></h2>
+                                            <p>Food truck meeting in 5</p>
                                         </div>
                                     </div>
                                     <div class="single-post">
@@ -367,8 +309,8 @@
                                         </div>
                                         <div class="lts-content">
                                             <span>Admin Post</span>
-                                            <h2><a href="blog.html">Sed ut perspiciatis unde omnis iste.</a></h2>
-                                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some...</p>
+                                            <h2><a href="blog.html">Festival </a></h2>
+                                            <p>Enjoy the fall with the anunnal pumpkin festival here in Atlanta</p>
                                         </div>
                                     </div>
                                 </div>
