@@ -26,3 +26,7 @@ def register(request):
 def index(request):
     context = {}
     return render(request,'FoodTruckApp/base.html', context)
+
+def menu(request):
+    context = {}
+    return render(request,'FoodTruckApp/menu.html', context)
