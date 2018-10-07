@@ -17,4 +17,5 @@ urlpatterns = [
     url(r'^menu$', views.menu, name='menu'),
     url(r'^userProfile$', views.userProfile, name='userProfile'),
     url(r'^ownerProfile$', views.ownerProfile, name='ownerProfile'),
+
 ]

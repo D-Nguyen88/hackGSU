@@ -1212,6 +1212,12 @@ table.dbkit-table tr td {
     background: #3c34ab;
 }
 
+.button-holder{
+  padding: 10%;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
 .footer-area {
     text-align: center;
     padding: 23px 0 19px;
@@ -2013,6 +2019,10 @@ label {
 
 .custom-control-label {
     margin-top: 2px;
+}
+
+.time_float{
+  float: left;
 }
 
 /*-------------------- END Form ------------------- */
