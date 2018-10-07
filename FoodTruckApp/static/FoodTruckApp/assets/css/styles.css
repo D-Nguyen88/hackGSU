@@ -8,10 +8,10 @@
     Version: 1.0
 
 ----------------------------------------------
-    
+
     CSS INDEX
     ===================
-  
+
     1. Core Css
     2. Dashboard One
         2.1 Sidebar Menu
@@ -75,6 +75,15 @@
     transition: all 0.3s ease 0s;
 }
 
+.card_tom {
+    align-content: center;
+    border: none;
+    border-radius: 4px;
+    background-color: #fff;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
 .card:hover {
     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.02);
 }
@@ -82,6 +91,13 @@
 .card-body {
     padding: 25.6px;
     padding: 1.6rem;
+}
+
+.card-body_tom {
+    padding: 25.6px;
+    padding: 1.6rem;
+    align: center;
+    text-align: center;
 }
 
 .h-full {
@@ -1079,12 +1095,32 @@ table.dbkit-table tr td {
             justify-content: space-between;
 }
 
+
+
 .lts-thumb {
     -ms-flex-preferred-size: calc(40% - 10px);
         flex-basis: calc(40% - 10px);
 }
 
+.lts-thumb_my { //tom
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+      align: center;
+      float: none;
+    -ms-flex-preferred-size: calc(40% - 10px);
+        flex-basis: calc(40% - 10px);
+}
+
+
 .lts-content {
+    -ms-flex-preferred-size: calc(60% - 10px);
+        flex-basis: calc(60% - 10px);
+}
+
+.lts-content_tom {
+    align-content: center;
     -ms-flex-preferred-size: calc(60% - 10px);
         flex-basis: calc(60% - 10px);
 }
@@ -1096,7 +1132,7 @@ table.dbkit-table tr td {
     letter-spacing: 0;
 }
 
-.lts-content h2 a {
+.lts-content h2 {
     display: block;
     font-size: 20px;
     font-weight: 700;
