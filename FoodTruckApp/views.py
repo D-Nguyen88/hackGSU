@@ -48,3 +48,7 @@ def menu(request):
 def userProfile(request):
     context = {}
     return render(request,'FoodTruckApp/userProfile.html', context)
+
+def ownerProfile(request):
+    context = {}
+    return render(request,'FoodTruckApp/ownerProfile.html', context)
