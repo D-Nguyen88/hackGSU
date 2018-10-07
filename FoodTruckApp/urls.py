@@ -15,4 +15,5 @@ urlpatterns = [
     url(r'^reset/done/$', auth_views.PasswordResetCompleteView.as_view(template_name = 'register/password_reset_complete.html'), name='password_reset_complete'),
     url(r'^index$', views.index, name='index'),
     url(r'^menu$', views.menu, name='menu'),
+    url(r'^userProfile$', views.userProfile, name='userProfile'),
 ]

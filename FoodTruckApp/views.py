@@ -22,7 +22,7 @@ def register(request):
     }
     return render(request, 'registration/register.html', context)
 
-<<<<<<< HEAD
+
 def view_user_profile(request):
     get_user_obj = UserProfile.objects.get(username=request.user)
     return render(request, url, context)
@@ -35,17 +35,16 @@ def view_announcements(request):
     get_announcements_obj = Announcements.objects.filter(pk=Truck)
     return render(request, url, context)
 
-    
-=======
 
 def index(request):
     context = {}
     return render(request,'FoodTruckApp/base.html', context)
-<<<<<<< HEAD
+
 
 def menu(request):
     context = {}
     return render(request,'FoodTruckApp/menu.html', context)
-=======
->>>>>>> 42a02671455861bf1bd5a64b482a34cca773dbbc
->>>>>>> refs/remotes/origin/master
+
+def userProfile(request):
+    context = {}
+    return render(request,'FoodTruckApp/userProfile.html', context)
