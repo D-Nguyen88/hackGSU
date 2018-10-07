@@ -2015,6 +2015,10 @@ label {
     margin-top: 2px;
 }
 
+.time_float{
+  float: left;
+}
+
 /*-------------------- END Form ------------------- */
 
 
